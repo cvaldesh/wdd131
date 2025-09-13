@@ -1,0 +1,16 @@
+/* This stylesheet is for larger screens */
+
+.temple-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* This is the hamburger menu that will be hidden on large screens */
+.hamburger {
+    display: none;
+}
