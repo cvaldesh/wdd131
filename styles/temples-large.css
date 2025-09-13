@@ -1,7 +1,15 @@
 /* This stylesheet is for larger screens */
 
-.temple-grid {
-    grid-template-columns: repeat(3, 1fr);
+@media (min-width: 768px) {
+    /* The media query is now active and contains a rule */
+    body {
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+
+    .temple-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 nav {
