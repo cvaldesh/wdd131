@@ -71,23 +71,15 @@ main {
 }
 
 .weather-section h2 {
-    position: relative;
-    padding-right: 30px; /* Make space for the icon */
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-/* Pseudo-element for the weather icon */
-.weather-section h2::after {
-    content: '';
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-image: url('../images/weather-logo.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
+/* Style for the embedded SVG icon */
+.weather-section .weather-icon {
+    width: 24px;
+    height: 24px;
 }
 
 footer {
