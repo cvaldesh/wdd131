@@ -4,8 +4,8 @@
     --secondary-color: #fff;
     --background-color: #f4f4f4;
     --border-color: #ccc;
-    --heading-font: 'Arial', sans-serif;
-    --body-font: 'Helvetica', sans-serif;
+    --heading-font: 'Roboto', sans-serif;
+    --body-font: 'Roboto', sans-serif;
 }
 
 /* Mobile-first styling */
@@ -57,12 +57,6 @@ main {
     display: block;
 }
 
-.content-sections {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
 .data-section, .weather-section {
     border: 1px solid var(--border-color);
     background-color: var(--secondary-color);
@@ -78,17 +72,22 @@ main {
 
 .weather-section h2 {
     position: relative;
-    padding-right: 25px; /* Make space for the icon */
+    padding-right: 30px; /* Make space for the icon */
 }
 
-/* Pseudo-element for the weather icon in the large view */
+/* Pseudo-element for the weather icon */
 .weather-section h2::after {
-    content: '☀️'; /* Example icon */
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('../images/weather-logo.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
     position: absolute;
     right: 0;
-    font-size: 1.2rem;
-    transform: translateY(-50%);
     top: 50%;
+    transform: translateY(-50%);
 }
 
 footer {
@@ -130,9 +129,5 @@ footer {
 
     footer {
         grid-area: footer;
-    }
-
-    .weather-section h2::after {
-        content: '☀️';
     }
 }

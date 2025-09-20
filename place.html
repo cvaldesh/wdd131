@@ -4,36 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viña del Mar, Chile</title>
+    <meta name="description" content="Explore Viña del Mar, Chile, known as the 'Garden City.' Discover its beautiful beaches, vibrant culture, and detailed weather information.">
+    <meta name="author" content="Carlos Valdes">
     <link rel="stylesheet" href="styles/place.css">
-    <script src="scripts/scripts.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <div class="page-container">
         <header>
-            <h1>Viña del Mar, Chile</h1>
+            <h1>Viña del Mar: The Garden City</h1>
         </header>
+
         <main>
-            <section class="data-section">
-                <h2>Data</h2>
-                <p><strong>Population:</strong> 334,248 (2017)</p>
+            <div class="image-container">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="images/vina-del-mar-large.webp">
+                    <img src="images/vina-del-mar-small.jpg" alt="A beautiful view of the coastal city of Viña del Mar">
+                </picture>
+            </div>
+
+            <div class="data-section">
+                <h2>General Information</h2>
+                <p><strong>Country:</strong> Chile</p>
                 <p><strong>Region:</strong> Valparaíso Region</p>
-                <p><strong>Elevation:</strong> 5 m</p>
-                <p><strong>Founded:</strong> 1874</p>
-            </section>
-            <section class="image-container">
-                <img src="images/vina-del-mar-large.jpg" alt="A beautiful view of Viña del Mar, Chile">
-            </section>
-            <section class="weather-section">
-                <h2>Weather</h2>
-                <p><strong>Temperature:</strong> 8°C</p>
-                <p><strong>Wind Speed:</strong> 8 km/h</p>
-                <p><strong>Windchill:</strong> <span id="windchill"></span></p>
-            </section>
+                <p><strong>Nickname:</strong> "The Garden City" (Ciudad Jardín)</p>
+                <p><strong>Population:</strong> ~334,871 (2017 Census)</p>
+                <p><strong>Elevation:</strong> 17 meters (56 ft)</p>
+                <p><strong>Founded:</strong> December 29, 1874</p>
+            </div>
+
+            <div class="weather-section">
+                <h2>Climate & Weather</h2>
+                <p><strong>Climate Type:</strong> Mediterranean Climate</p>
+                <p><strong>Average Temp (Jan):</strong> 21°C (70°F)</p>
+                <p><strong>Average Temp (Jul):</strong> 15°C (59°F)</p>
+                <p><strong>Rainfall:</strong> Concentrated in autumn/winter</p>
+                <p><strong>Notable Features:</strong> Comfortable, arid summers and cool, partly cloudy winters.</p>
+            </div>
         </main>
+
         <footer>
-            <p>&copy; <span id="currentyear"></span></p>
-            <p>Last Modified: <span id="lastmodified"></span></p>
+            <p>&copy; <span id="currentyear"></span> Viña del Mar, Chile | Carlos Valdes | WDD 131</p>
         </footer>
     </div>
+
+    <script src="scripts/place.js" defer></script>
 </body>
 </html>
