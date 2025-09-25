@@ -1,0 +1,24 @@
+/* This stylesheet is for larger screens */
+
+@media (min-width: 768px) {
+    /* The media query is now active and contains a rule */
+    body {
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+
+    .temple-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* This is the hamburger menu that will be hidden on large screens */
+.hamburger {
+    display: none;
+}

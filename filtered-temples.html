@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description" content="A simple, responsive picture album of temples.">
+    <meta name="author" content="Carlos Valdes">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css" media="screen and (min-width: 768px)">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Old</a>
+            <a href="#">New</a>
+            <a href="#">Large</a>
+            <a href="#">Small</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Temple</h1>
+        <h2>Welcome to the Album</h2>
+        <div class="temple-grid">
+            <figure>
+                <img src="images/santiago_chile_temple.jpg" alt="Santiago Chile Temple">
+                <figcaption>Santiago</figcaption>
+            </figure>
+            <figure>
+                <img src="images/buenos_aires_argentina_temple.webp" alt="Buenos Aires Argentina Temple">
+                <figcaption>Buenos Aires</figcaption>
+            </figure>
+            <figure>
+                <img src="images/concepcion_chile_temple.jpg" alt="Concepcion Chile Temple">
+                <figcaption>Concepcion</figcaption>
+            </figure>
+            <figure>
+                <img src="images/mesa-arizona-temple.jpg" alt="Mesa Arizona Temple">
+                <figcaption>Mesa Arizona</figcaption>
+            </figure>
+            <figure>
+                <img src="images/new-york-temple.jpg" alt="New York Temple">
+                <figcaption>New York</figcaption>
+            </figure>
+            <figure>
+                <img src="images/seoul_korea_temple.webp" alt="Seoul Korea Temple">
+                <figcaption>Seoul Korea</figcaption>
+            </figure>
+            <figure>
+                <img src="images/the_hague_netherlands_temple.webp" alt="The Hague Netherlands Temple">
+                <figcaption>The Hague</figcaption>
+            </figure>
+            <figure>
+                <img src="images/tokyo_japan_temple.webp" alt="Tokyo Japan Temple">
+                <figcaption>Tokyo Japan</figcaption>
+            </figure>
+            <figure>
+                <img src="images/taylorsville_utah_temple.jpg" alt="Taylorsville Utah Temple">
+                <figcaption>Taylorsville</figcaption>
+            </figure>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Carlos Valdes | Santiago/Chile</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
