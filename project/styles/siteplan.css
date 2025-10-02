@@ -1,0 +1,127 @@
+/* ----------------------------------------------------------------
+    DOCUMENT STYLES
+    Focuses on professional typography and readability for the project plan.
+---------------------------------------------------------------- */
+
+/* Color and Font Variables based on Site Plan */
+:root {
+    --primary-blue: #0077B6;   /* Headings, accents */
+    --accent-green: #2ECC71;   /* Used for scenario highlights/positive notes */
+    --light-bg: #F4F7F9;       /* Main background */
+    --text-dark: #34495E;      /* Body text */
+    --font-heading: 'Roboto', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+}
+
+/* Base Styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-bg);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+/* Document Container - Centers content and sets max width for readability */
+#document-container {
+    /* Ensures the document is centered and doesn't stretch too wide */
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px 40px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Typography Styling */
+h1 {
+    font-family: var(--font-heading);
+    color: var(--primary-blue);
+    font-size: 2.2rem;
+    /* Adds a distinct separator using the primary blue color */
+    border-bottom: 3px solid var(--primary-blue);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: var(--font-heading);
+    color: var(--text-dark);
+    font-size: 1.6rem;
+    margin-top: 30px;
+    /* Uses a vertical blue line to visually group content blocks */
+    padding-left: 10px;
+    border-left: 4px solid var(--primary-blue);
+}
+
+h3 {
+    font-family: var(--font-heading);
+    color: var(--primary-blue);
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: #6c757d;
+    margin-top: -15px;
+}
+
+/* Scenario List Styling (Section 3) */
+.scenario-list {
+    list-style: none;
+    padding: 0;
+}
+.scenario-list li {
+    margin-bottom: 25px;
+    padding: 15px;
+    background-color: #f8f9fa; /* Very light background for scenario blocks */
+    /* Highlights each scenario block with the accent green border */
+    border-left: 5px solid var(--accent-green);
+    border-radius: 4px;
+}
+.scenario-question {
+    font-style: italic;
+    color: var(--primary-blue);
+    padding: 5px 0;
+}
+.content-focus {
+    font-weight: 500;
+    color: var(--text-dark);
+    margin-top: 10px;
+    padding-top: 5px;
+    border-top: 1px dashed #ced4da;
+    font-size: 0.95rem;
+}
+
+/* Footer Style */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #e9ecef;
+    font-size: 0.85rem;
+    color: #adb5bd;
+}
+
+/* Media Query for Mobile Readability */
+@media (max-width: 600px) {
+    #document-container {
+        margin: 20px auto;
+        padding: 20px 20px;
+        /* Ensures the document uses full screen width on phones */
+        border-radius: 0; 
+        box-shadow: none;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+    h2 {
+        font-size: 1.4rem;
+    }
+}
