@@ -1,0 +1,189 @@
+/* Basic Reset and Box Sizing */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9; /* Light background */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #4a148c; /* Deep Purple */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    flex: 1; /* Main content takes up available space */
+    padding: 20px;
+    max-width: 600px; /* Max width for desktop readability */
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Form Styling --- */
+.review-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Fieldset Styling */
+fieldset {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+legend {
+    font-weight: bold;
+    color: #4a148c;
+    padding: 0 10px;
+}
+
+/* Label and Input Styling */
+label {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* --- Overall Rating Stars (Radio Group) --- */
+.rating-stars {
+    display: flex;
+    flex-direction: row-reverse; /* To make 5 stars appear on the right */
+    justify-content: flex-end;
+    margin-bottom: 15px;
+}
+
+.rating-stars input[type="radio"] {
+    display: none; /* Hide the actual radio button */
+}
+
+.rating-stars label {
+    font-size: 2rem; /* Star size */
+    color: #ccc; /* Unselected star color */
+    cursor: pointer;
+    transition: color 0.2s;
+    margin: 0 2px;
+}
+
+/* Hover and checked state styling */
+.rating-stars label:hover,
+.rating-stars label:hover ~ label,
+.rating-stars input[type="radio"]:checked ~ label {
+    color: gold; /* Selected/hovered star color */
+}
+
+/* --- Checkbox Group for Features --- */
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 10px;
+    width: auto; /* Override 100% width */
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+/* --- Submit Button --- */
+.submit-button {
+    background-color: #673ab7; /* Lighter Purple */
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #512da8;
+}
+
+/* --- Confirmation Page Styling --- */
+.confirmation-message {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.confirmation-message h1 {
+    color: #673ab7;
+    margin-bottom: 15px;
+}
+
+.confirmation-message p {
+    margin: 10px 0;
+}
+
+#reviewCount {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e91e63; /* Pink accent */
+}
+
+/* --- Footer Styling --- */
+footer {
+    background-color: #4a148c; /* Deep Purple */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8rem;
+    margin-top: auto; /* Pushes footer to the bottom */
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* --- Media Query for Mobile (Ensuring Usability) --- */
+@media (max-width: 600px) {
+    main {
+        margin: 10px;
+        padding: 15px;
+    }
+    
+    header h1 {
+        font-size: 1.5rem;
+    }
+}
