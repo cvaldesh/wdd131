@@ -6,7 +6,8 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    /* Use the font linked in HTML */
+    font-family: 'Roboto', Arial, sans-serif; 
     line-height: 1.6;
     background-color: #f4f4f9; /* Light background */
     color: #333;

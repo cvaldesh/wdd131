@@ -1,12 +1,10 @@
 // --- Product Data Array (Step 4.1) ---
-// Note: In a real application, this would typically come from an external source.
 const products = [
     { id: 'fc-1888', name: 'Flux Capacitor' },
     { id: 'a-2038', name: 'Anti-Gravity Generator' },
     { id: 'ed-1599', name: 'Empathy Detector' },
     { id: 'ts-2000', name: 'Time Scanner' },
     { id: 'lp-3021', name: 'Logic Processor' }
-    // Add more products as needed
 ];
 
 // --- Common Footer Functionality ---
