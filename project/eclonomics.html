@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO & Author Tags -->
+    <meta name="description" content="eCLonomics provides a real-time dashboard of key Chilean economic indicators (UF, USD, EUR) with historical context and clear explanations.">
+    <meta name="author" content="Carlos Valdes">
+    
+    <title>eCLonomics - Chilean Economic Dashboard</title>
+    <!-- Link to the main style file -->
+    <link rel="stylesheet" href="styles/eclonomics.css">
+    <!-- Using Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1 class="logo">eCLonomics</h1>
+            <!-- Container for the dynamic date and time -->
+            <div id="date-time-display" class="date-time-display"></div>
+        </div>
+    </header>
+
+    <!-- Common Navigation Bar -->
+    <nav>
+        <ul class="nav-links">
+            <li><a href="eclonomics.html" class="active">Overview</a></li>
+            <li><a href="explanation.html">Explanation</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <!-- SECTION 1: Current Indicators Dashboard -->
+        <section id="dashboard" class="dashboard-section">
+            <h2>Current Economic Indicators</h2>
+            <div id="indicators-container" class="indicators-grid">
+                <!-- UF, DOLAR, and EURO indicators will be injected here by JavaScript -->
+                <div class="indicator-card" data-currency="UF">
+                    <i class="fas fa-university icon"></i>
+                    <h3>Unidad de Fomento (UF)</h3>
+                    <p id="uf-value">Loading...</p>
+                    <small>Daily Reference Value</small>
+                </div>
+                
+                <div class="indicator-card" data-currency="DOLAR">
+                    <i class="fas fa-dollar-sign icon"></i>
+                    <h3>Observed US Dollar (USD)</h3>
+                    <p id="dolar-value">Loading...</p>
+                    <small>Latest Update</small>
+                </div>
+
+                <div class="indicator-card" data-currency="EURO">
+                    <i class="fas fa-euro-sign icon"></i>
+                    <h3>Euro (EUR)</h3>
+                    <p id="euro-value">Loading...</p>
+                    <small>Latest Update</small>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 eCLonomics Project. Dynamic Web Fundamentals Course.</p>
+    </footer>
+
+    <!-- Link to the main script file -->
+    <script src="scripts/eclonomics.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO & Author Tags -->
+    <meta name="description" content="About eCLonomics: A project developed for the Dynamic Web Fundamentals course to demonstrate modern JavaScript, HTML, and responsive design principles.">
+    <meta name="author" content="Carlos Valdes">
+    
+    <title>eCLonomics - About the Project</title>
+    <!-- Link to the main style file -->
+    <link rel="stylesheet" href="styles/eclonomics.css">
+    <!-- Using Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1 class="logo">eCLonomics</h1>
+            <!-- Container for the dynamic date and time (uses script) -->
+            <div id="date-time-display" class="date-time-display"></div>
+        </div>
+    </header>
+
+    <!-- Common Navigation Bar -->
+    <nav>
+        <ul class="nav-links">
+            <li><a href="eclonomics.html">Overview</a></li>
+            <li><a href="explanation.html">Explanation</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+        </ul>
+    </nav>
+    
+    <main class="about-main">
+        <section class="content-section">
+            <h2>About the eCLonomics Project</h2>
+            <p>Welcome to **eCLonomics**, a web application designed to track and explain key Chilean economic indicators. This project serves as the final deliverable for the **Dynamic Web Fundamentals** course, demonstrating the practical application of essential web development concepts.</p>
+
+            <h3>Project Objectives and Requirements</h3>
+            <p>This site was specifically developed to meet a high standard of functional and structural requirements, including:</p>
+            <ul>
+                <li>**Static Hosting:** Deployed and rendered using **GitHub Pages**.</li>
+                <li>**Dynamic Content:** Data retrieval from public API endpoints (<a href="https://mindicador.cl/api" target="_blank">Mindicador.cl</a>) using modern **JavaScript** (ES6+).</li>
+                <li>**Core JS Functionality:** Implementation of DOM interaction, multiple functions, conditional branching, array methods (`reduce`), objects, and template literals.</li>
+                <li>**State Management:** Utilization of `localStorage` for basic data caching to enhance performance and reduce API calls.</li>
+                <li>**Design Standards:** Adherence to **accessibility** (A11y), **usability**, and responsive design principles, ensuring optimal viewing across mobile and desktop screens.</li>
+                <li>**Markup Standards:** Use of valid, standards-based HTML5 and CSS.</li>
+            </ul>
+
+            <h3>Our Goal</h3>
+            <p>The primary goal of eCLonomics is to provide a clean, reliable, and educational resource for students, professionals, and anyone interested in the Chilean economy. By showing the current values and providing simple explanations, the site aims to demystify complex financial figures.</p>
+            
+            <p>Thank you for visiting! For feedback or inquiries, please refer to the project repository on GitHub.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 eCLonomics Project. Dynamic Web Fundamentals Course.</p>
+    </footer>
+
+    <!-- The common script is included for the date/time display -->
+    <script src="scripts/eclonomics.js"></script>
+</body>
+</html>
